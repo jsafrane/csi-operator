@@ -19,7 +19,7 @@ spec:
     scheme: https
     tlsConfig:
       caFile: /etc/prometheus/configmaps/serving-certs-ca-bundle/service-ca.crt
-      serverName: aws-efs-csi-driver-controller-metrics.${NAMESPACE}.svc
+      serverName: aws-efs-csi-driver-controller-metrics.${NODE_NAMESPACE}.svc
   jobLabel: component
   selector:
     matchLabels:

@@ -23,7 +23,7 @@ spec:
     scheme: https
     tlsConfig:
       caFile: /etc/prometheus/configmaps/serving-certs-ca-bundle/service-ca.crt
-      serverName: azure-file-csi-driver-controller-metrics.${NAMESPACE}.svc
+      serverName: azure-file-csi-driver-controller-metrics.${NODE_NAMESPACE}.svc
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     interval: 30s
     path: /metrics
@@ -31,7 +31,7 @@ spec:
     scheme: https
     tlsConfig:
       caFile: /etc/prometheus/configmaps/serving-certs-ca-bundle/service-ca.crt
-      serverName: azure-file-csi-driver-controller-metrics.${NAMESPACE}.svc
+      serverName: azure-file-csi-driver-controller-metrics.${NODE_NAMESPACE}.svc
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     interval: 30s
     path: /metrics
@@ -39,7 +39,7 @@ spec:
     scheme: https
     tlsConfig:
       caFile: /etc/prometheus/configmaps/serving-certs-ca-bundle/service-ca.crt
-      serverName: azure-file-csi-driver-controller-metrics.${NAMESPACE}.svc
+      serverName: azure-file-csi-driver-controller-metrics.${NODE_NAMESPACE}.svc
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     interval: 30s
     path: /metrics
@@ -47,7 +47,7 @@ spec:
     scheme: https
     tlsConfig:
       caFile: /etc/prometheus/configmaps/serving-certs-ca-bundle/service-ca.crt
-      serverName: azure-file-csi-driver-controller-metrics.${NAMESPACE}.svc
+      serverName: azure-file-csi-driver-controller-metrics.${NODE_NAMESPACE}.svc
   - bearerTokenFile: /var/run/secrets/kubernetes.io/serviceaccount/token
     interval: 30s
     path: /metrics
@@ -55,7 +55,7 @@ spec:
     scheme: https
     tlsConfig:
       caFile: /etc/prometheus/configmaps/serving-certs-ca-bundle/service-ca.crt
-      serverName: azure-file-csi-driver-controller-metrics.${NAMESPACE}.svc
+      serverName: azure-file-csi-driver-controller-metrics.${NODE_NAMESPACE}.svc
   jobLabel: component
   selector:
     matchLabels:
